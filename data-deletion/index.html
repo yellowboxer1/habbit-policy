@@ -4,67 +4,113 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>해빗 계정 및 데이터 삭제 안내</title>
-  <style>
-    :root { --ink:#17202a; --muted:#667085; --line:#e6e9ef; --accent:#14b8a6; --bg:#fbfcfd; }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.72; }
-    main { width:min(820px, calc(100% - 40px)); margin:0 auto; padding:48px 0 72px; }
-    a { color:#0f766e; }
-    h1 { margin:0 0 8px; font-size:34px; line-height:1.2; }
-    h2 { margin:38px 0 12px; padding-top:22px; border-top:1px solid var(--line); font-size:22px; }
-    p, li { font-size:16px; }
-    .meta { color:var(--muted); margin:0 0 24px; }
-    .lead { padding:18px 20px; border:1px solid var(--line); border-radius:10px; background:#fff; }
-    ol, ul { padding-left:22px; }
-    footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); }
-  </style>
+  <link rel="stylesheet" href="../assets/policy.css">
 </head>
-<body>
+<body data-page-title-ko="해빗 계정 및 데이터 삭제 안내" data-page-title-en="Habbit Account and Data Deletion">
   <main>
-    <p><a href="../">정책 문서 홈</a></p>
-    <h1>해빗 계정 및 데이터 삭제 안내</h1>
-    <p class="meta">시행일: 2026년 5월 24일</p>
-    <p class="lead">해빗은 사용자가 원할 때 계정과 계정 기반 클라우드 백업 데이터를 삭제할 수 있도록 지원합니다.</p>
+    <div class="policy-topbar">
+      <a class="home-link" href="../" data-preserve-lang data-i18n-ko="정책 문서 홈" data-i18n-en="Policy Home">정책 문서 홈</a>
+      <label class="language-switcher">
+        <span data-i18n-ko="언어" data-i18n-en="Language">언어</span>
+        <select data-language-select aria-label="Language">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </div>
 
-    <h2>앱에서 삭제하기</h2>
-    <ol>
-      <li>해빗 앱을 엽니다.</li>
-      <li>하단의 설정 탭으로 이동합니다.</li>
-      <li>MY 섹션에서 계정 삭제를 선택합니다.</li>
-      <li>확인 창에서 삭제를 선택하면 Google 계정 연결과 클라우드 백업 데이터가 삭제됩니다.</li>
-    </ol>
+    <section data-lang-content="ko">
+      <h1>해빗 계정 및 데이터 삭제 안내</h1>
+      <p class="meta">시행일: 2026년 5월 24일</p>
+      <p class="lead">해빗은 사용자가 원할 때 계정과 계정 기반 클라우드 백업 데이터를 삭제할 수 있도록 지원합니다.</p>
 
-    <h2>이메일로 삭제 요청하기</h2>
-    <p>앱을 사용할 수 없거나 삭제에 문제가 있는 경우 <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>으로 데이터 삭제를 요청할 수 있습니다.</p>
-    <p>요청 시 다음 정보를 함께 보내주세요.</p>
-    <ul>
-      <li>해빗에 연결한 Google 계정 이메일</li>
-      <li>삭제 요청 범위 또는 문제가 발생한 경우 관련 설명</li>
-    </ul>
-    
-    <h2>계정 삭제 없이 일부 데이터 삭제하기</h2>
-    <p>사용자는 계정을 삭제하지 않고도 앱 내에서 일부 데이터를 직접 삭제하거나 수정할 수 있습니다.</p>
-    <ul>
-      <li>개별 습관 삭제</li>
-      <li>습관 기록 및 적립금 사용 기록 삭제 또는 초기화</li>
-      <li>프로필 이미지 변경 또는 삭제</li>
-      <li>월 목표, 캐릭터, 알림, 피드백 설정 등 앱 설정 변경</li>
-    </ul>
-    <p>앱에서 직접 삭제하기 어려운 특정 데이터가 있는 경우 <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>으로 삭제를 요청할 수 있습니다.</p>
-    
-    <h2>삭제되는 데이터</h2>
-    <ul>
-      <li>계정 식별 정보</li>
-      <li>클라우드 백업에 저장된 습관, 습관 기록, 적립금 사용 기록</li>
-      <li>월 목표, 하루 마감 편지 기록, 캐릭터 및 앱 설정</li>
-    </ul>
-    
-    <h2>기기 내 데이터</h2>
-    <p>앱 삭제 또는 기기 설정의 앱 데이터 삭제를 통해 기기 내 로컬 데이터를 삭제할 수 있습니다. 계정 삭제는 클라우드 백업 데이터를 삭제하지만, 이미 기기에 저장된 로컬 데이터는 사용자의 기기에서 직접 삭제해야 할 수 있습니다.</p>
+      <h2>앱에서 삭제하기</h2>
+      <ol>
+        <li>해빗 앱을 엽니다.</li>
+        <li>하단의 설정 탭으로 이동합니다.</li>
+        <li>MY 섹션에서 계정 삭제를 선택합니다.</li>
+        <li>확인 창에서 삭제를 선택하면 Google 계정 연결과 클라우드 백업 데이터가 삭제됩니다.</li>
+      </ol>
 
-    <h2>처리 기간</h2>
-    <p>앱 내 계정 삭제는 즉시 처리됩니다. 이메일 요청은 본인 확인 후 합리적인 기간 내에 처리합니다.</p>
-    <footer>Habbit Account and Data Deletion</footer>
+      <h2>이메일로 삭제 요청하기</h2>
+      <p>앱을 사용할 수 없거나 삭제에 문제가 있는 경우 <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>으로 데이터 삭제를 요청할 수 있습니다.</p>
+      <p>요청 시 다음 정보를 함께 보내주세요.</p>
+      <ul>
+        <li>해빗에 연결한 Google 계정 이메일</li>
+        <li>삭제 요청 범위 또는 문제가 발생한 경우 관련 설명</li>
+      </ul>
+
+      <h2>계정 삭제 없이 일부 데이터 삭제하기</h2>
+      <p>사용자는 계정을 삭제하지 않고도 앱 내에서 일부 데이터를 직접 삭제하거나 수정할 수 있습니다.</p>
+      <ul>
+        <li>개별 습관 삭제</li>
+        <li>습관 기록 및 적립금 사용 기록 삭제 또는 초기화</li>
+        <li>프로필 이미지 변경 또는 삭제</li>
+        <li>월 목표, 캐릭터, 알림, 피드백 설정 등 앱 설정 변경</li>
+      </ul>
+      <p>앱에서 직접 삭제하기 어려운 특정 데이터가 있는 경우 <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>으로 삭제를 요청할 수 있습니다.</p>
+
+      <h2>삭제되는 데이터</h2>
+      <ul>
+        <li>계정 식별 정보</li>
+        <li>클라우드 백업에 저장된 습관, 습관 기록, 적립금 사용 기록</li>
+        <li>월 목표, 하루 마감 편지 기록, 캐릭터 및 앱 설정</li>
+      </ul>
+
+      <h2>기기 내 데이터</h2>
+      <p>앱 삭제 또는 기기 설정의 앱 데이터 삭제를 통해 기기 내 로컬 데이터를 삭제할 수 있습니다. 계정 삭제는 클라우드 백업 데이터를 삭제하지만, 이미 기기에 저장된 로컬 데이터는 사용자의 기기에서 직접 삭제해야 할 수 있습니다.</p>
+
+      <h2>처리 기간</h2>
+      <p>앱 내 계정 삭제는 즉시 처리됩니다. 이메일 요청은 본인 확인 후 합리적인 기간 내에 처리합니다.</p>
+      <footer>Habbit Account and Data Deletion</footer>
+    </section>
+
+    <section data-lang-content="en">
+      <h1>Habbit Account and Data Deletion</h1>
+      <p class="meta">Effective date: May 24, 2026</p>
+      <p class="lead">Habbit supports deleting your account and account-based cloud backup data when you choose to do so.</p>
+
+      <h2>Delete Your Account in the App</h2>
+      <ol>
+        <li>Open the Habbit app.</li>
+        <li>Go to the Settings tab at the bottom.</li>
+        <li>In the MY section, select Delete account.</li>
+        <li>Choose Delete in the confirmation dialog to delete your Google account connection and cloud backup data.</li>
+      </ol>
+
+      <h2>Request Deletion by Email</h2>
+      <p>If you cannot use the app or have a problem deleting your data, you can request data deletion by emailing <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>.</p>
+      <p>Please include the following information in your request.</p>
+      <ul>
+        <li>The Google account email connected to Habbit</li>
+        <li>The scope of your deletion request, or a description of the issue if something went wrong</li>
+      </ul>
+
+      <h2>Delete Some Data Without Deleting Your Account</h2>
+      <p>You can delete or edit some data directly in the app without deleting your account.</p>
+      <ul>
+        <li>Delete individual habits</li>
+        <li>Delete or reset habit records and virtual savings usage records</li>
+        <li>Change or delete your profile image</li>
+        <li>Change app settings such as monthly goals, character settings, notifications, and feedback settings</li>
+      </ul>
+      <p>If there is specific data that is difficult to delete directly in the app, you can request deletion by emailing <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>.</p>
+
+      <h2>Data That Is Deleted</h2>
+      <ul>
+        <li>Account identifiers</li>
+        <li>Habits, habit records, and virtual savings usage records stored in cloud backup</li>
+        <li>Monthly goals, daily wrap-up letter records, character data, and app settings</li>
+      </ul>
+
+      <h2>On-Device Data</h2>
+      <p>You can delete local data on your device by deleting the app or deleting app data through device settings. Account deletion deletes cloud backup data, but local data already stored on your device may need to be deleted directly from your device.</p>
+
+      <h2>Processing Time</h2>
+      <p>In-app account deletion is processed immediately. Email requests are processed within a reasonable period after identity verification.</p>
+      <footer>Habbit Account and Data Deletion</footer>
+    </section>
   </main>
+  <script src="../assets/policy-language.js"></script>
 </body>
 </html>

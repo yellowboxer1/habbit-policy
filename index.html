@@ -4,69 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>해빗 정책 문서</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #17202a;
-      --muted: #667085;
-      --line: #e6e9ef;
-      --accent: #14b8a6;
-      --bg: #fbfcfd;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.65;
-    }
-    main {
-      width: min(760px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 64px 0;
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: 34px;
-      line-height: 1.2;
-    }
-    p { color: var(--muted); }
-    nav {
-      display: grid;
-      gap: 12px;
-      margin-top: 32px;
-    }
-    a {
-      display: block;
-      padding: 18px 20px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: #fff;
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    a span {
-      display: block;
-      margin-top: 3px;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 500;
-    }
-    a:hover { border-color: var(--accent); }
-  </style>
+  <link rel="stylesheet" href="./assets/policy.css">
 </head>
-<body>
+<body data-page-title-ko="해빗 정책 문서" data-page-title-en="Habbit Policy Documents">
   <main>
-    <h1>해빗 정책 문서</h1>
-    <p>해빗 앱의 개인정보 처리방침, 제3자 제공 및 처리위탁 동의, 이용약관, 계정 및 데이터 삭제 안내를 확인할 수 있습니다.</p>
-    <nav aria-label="정책 문서">
-      <a href="./privacy/">개인정보 처리방침<span>Privacy Policy</span></a>
-      <a href="./third-party-consent/">개인정보 제3자 제공 및 처리위탁 동의<span>Third-Party Consent</span></a>
-      <a href="./terms/">이용약관<span>Terms of Service</span></a>
-      <a href="./data-deletion/">계정 및 데이터 삭제 안내<span>Account and Data Deletion</span></a>
-    </nav>
+    <div class="policy-topbar">
+      <a class="home-link" href="./" data-preserve-lang data-i18n-ko="정책 문서 홈" data-i18n-en="Policy Home">정책 문서 홈</a>
+      <label class="language-switcher">
+        <span data-i18n-ko="언어" data-i18n-en="Language">언어</span>
+        <select data-language-select aria-label="Language">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </div>
+
+    <section data-lang-content="ko">
+      <h1>해빗 정책 문서</h1>
+      <p>해빗 앱의 개인정보 처리방침, 제3자 제공 및 처리위탁 동의, 이용약관, 계정 및 데이터 삭제 안내를 확인할 수 있습니다.</p>
+      <nav class="nav-grid" aria-label="정책 문서">
+        <a class="nav-card" href="./privacy/" data-preserve-lang>개인정보 처리방침<span>Privacy Policy</span></a>
+        <a class="nav-card" href="./third-party-consent/" data-preserve-lang>개인정보 제3자 제공 및 처리위탁 동의<span>Third-Party Consent</span></a>
+        <a class="nav-card" href="./terms/" data-preserve-lang>이용약관<span>Terms of Service</span></a>
+        <a class="nav-card" href="./data-deletion/" data-preserve-lang>계정 및 데이터 삭제 안내<span>Account and Data Deletion</span></a>
+      </nav>
+    </section>
+
+    <section data-lang-content="en">
+      <h1>Habbit Policy Documents</h1>
+      <p>You can review Habbit's Privacy Policy, Third-Party Consent, Terms of Service, and Account and Data Deletion instructions here.</p>
+      <nav class="nav-grid" aria-label="Policy documents">
+        <a class="nav-card" href="./privacy/" data-preserve-lang>Privacy Policy<span>개인정보 처리방침</span></a>
+        <a class="nav-card" href="./third-party-consent/" data-preserve-lang>Third-Party Consent<span>개인정보 제3자 제공 및 처리위탁 동의</span></a>
+        <a class="nav-card" href="./terms/" data-preserve-lang>Terms of Service<span>이용약관</span></a>
+        <a class="nav-card" href="./data-deletion/" data-preserve-lang>Account and Data Deletion<span>계정 및 데이터 삭제 안내</span></a>
+      </nav>
+    </section>
   </main>
+  <script src="./assets/policy-language.js"></script>
 </body>
 </html>
