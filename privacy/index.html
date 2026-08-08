@@ -21,252 +21,214 @@
 
     <section data-lang-content="ko">
       <h1>해빗 개인정보 처리방침</h1>
-      <p class="meta">시행일: 2026년 7월 31일</p>
-      <p class="lead">해빗은 사용자가 입력한 습관 기록, 적립 기록, 앱 설정을 안전하게 보관하고 앱 기능을 제공하기 위해 필요한 범위의 정보만 처리합니다. 사용자가 걸음 수 자동 검증 미션을 선택하면 Apple HealthKit, Android Health Connect 또는 지원되는 Android 기기의 걸음 수 카운터에서 건강·피트니스 데이터인 일별 누적 걸음 수에 접근하고 이를 수집·이용할 수 있습니다. 앱에는 일일 미션 보상을 위한 Google AdMob 보상형 광고가 포함될 수 있으며, 광고 요청은 비개인 맞춤 광고 옵션으로 전송합니다. 해빗은 건강 데이터를 광고 또는 광고 개인 맞춤화에 사용하거나 판매하지 않습니다. 앱은 연락처나 위치 권한을 요청하지 않으며 정확한 위치를 수집하지 않지만, Google Mobile Ads SDK는 IP 주소에서 대략적인 위치를 추정할 수 있습니다.</p>
+      <p class="meta">시행일: 2026년 8월 8일</p>
+      <p class="lead">해빗은 습관 관리, 캐릭터, 선택형 클라우드 백업, 라운지, 챌린지와 보상형 광고를 제공하기 위해 아래 정보를 처리합니다. 걸음 수 자동 검증 미션을 선택하면 건강·피트니스 데이터인 일별 누적 걸음 수에 접근할 수 있습니다. 건강 데이터는 광고 또는 개인 맞춤화에 사용하거나 판매하지 않습니다.</p>
 
-      <h2>1. 처리하는 정보</h2>
-      <p>해빗은 앱 사용 방식에 따라 다음 정보를 기기 또는 계정 동기화 저장소에 저장할 수 있습니다.</p>
-
-      <h3>1.1 사용자가 입력하거나 생성한 앱 데이터</h3>
+      <h2>1. 처리 목적과 항목</h2>
+      <h3>1.1 앱 기본 기능과 기기 저장</h3>
       <ul>
-        <li>습관 이름, 습관 유형, 습관별 금액, 정렬 순서, 습관 알림 시간</li>
-        <li>습관 달성 기록, 날짜별 달성 횟수</li>
-        <li>적립금 사용 기록, 사용 금액, 날짜, 메모</li>
-        <li>월 목표, 하루 마감 편지, 일별 정산 결과와 통계</li>
-        <li>캐릭터, 방, 액세서리, 보상, 출석, 경험치 등 앱 진행 상태</li>
-        <li>피드백 강도, 알림음, 배경 음악 켜짐/꺼짐 등 앱 설정</li>
-        <li>사용자가 선택한 프로필 이미지. 프로필 이미지 파일은 기기에 저장되며 클라우드 백업 대상에 포함하지 않습니다.</li>
-        <li>챌린지 팀 대화에 사용자가 입력한 메시지. 메시지는 같은 챌린지 방의 팀원에게 표시되며, 팀원의 앱 언어로 자동 번역하기 위해 Google Cloud Translation에서 일시적으로 처리될 수 있습니다.</li>
+        <li>습관 이름·유형·금액·알림 시간과 요일, 날짜별 달성 횟수</li>
+        <li>적립금 사용 금액·날짜·메모, 월 목표, 하루 마감 편지·기분·정산 결과와 통계</li>
+        <li>닉네임, 캐릭터 성장·상태·보유 및 착용 아이템·위치와 크기, 당근·경험치·출석·업적·보상·친구 캐릭터</li>
+        <li>피드백, 정산 시각, 알림음, 배경 음악, 언어, 알림 예약 ID와 앱 운영 상태</li>
+        <li>Android ID를 바탕으로 구성한 Android 설치 식별자 또는 다른 플랫폼에서 임의 생성한 설치 식별자, 추천 식별자</li>
+        <li>사용자가 선택한 프로필 이미지. 앱 전용 기기 저장소에 보관하며 클라우드 백업에 포함하지 않습니다.</li>
       </ul>
 
-      <h3>1.2 계정 연결 및 동기화 정보</h3>
-      <p>Google, Apple 또는 Kakao 계정을 연결하면 인증과 클라우드 백업을 위해 다음 정보가 처리될 수 있습니다.</p>
-      <ul>
-        <li>Google, Apple, Kakao 로그인 또는 Supabase 인증 과정에서 제공되는 계정 식별 정보</li>
-        <li>Supabase 인증 사용자 ID와 인증 세션 정보</li>
-        <li>기기 설치 식별자</li>
-        <li>Supabase 동기화 테이블에 저장되는 앱 데이터</li>
-      </ul>
-      <p>해빗의 Supabase 동기화 저장소에는 profiles, user_settings, habits, habit_logs, spends, daily_settlements 테이블이 사용됩니다. 각 테이블은 로그인한 사용자 본인의 데이터만 접근하도록 행 수준 보안 정책을 적용합니다.</p>
+      <h3>1.2 선택형 계정 연결과 클라우드 백업</h3>
+      <p>Google, Apple 또는 Kakao 계정을 연결하면 공급자 계정 식별자, 허용된 이메일·이름·닉네임·프로필 정보, 인증 토큰, Supabase 사용자 ID·세션, 설치 식별자와 동기화 대상 앱 데이터가 처리될 수 있습니다. Kakao 로그인에서는 허용된 경우 Kakao ID, 플랫폼 정보와 프로필 이미지 URL도 인증 메타데이터에 저장될 수 있습니다.</p>
+      <p>클라우드 교체 동기화 전 복구를 위해 기존 서버 데이터 전체의 안전 백업 사본, 레코드 수, 백업 사유와 시각이 Supabase에 저장될 수 있습니다. 계정 연결은 선택 사항입니다.</p>
 
-      <h3>1.3 기기 저장 정보</h3>
-      <ul>
-        <li>기본 앱 데이터는 기기 내부 저장소에 저장됩니다.</li>
-        <li>네이티브 앱의 인증 세션은 SecureStore에 저장됩니다. 기존 버전에서 저장된 세션 정보는 최초 읽기 시 SecureStore로 이전될 수 있습니다.</li>
-        <li>웹 환경에서는 브라우저 기반 저장소를 통해 인증 세션이 유지될 수 있습니다.</li>
-        <li>알림 예약 ID와 온보딩 완료 여부 등 운영 정보가 기기 저장소에 저장될 수 있습니다.</li>
-      </ul>
+      <h3>1.3 라운지</h3>
+      <p>온보딩을 마치고 닉네임을 설정하면 라운지 순위 동기화를 위해 소셜 로그인과 별개의 익명 Supabase 인증 ID와 세션이 자동 생성될 수 있습니다. 닉네임, 소개, 언어, 캐릭터와 착용 상태, 누적 당근, 연속 출석, 게시글, 댓글, 반응, 신고와 차단 정보가 저장될 수 있습니다.</p>
+      <p>닉네임, 캐릭터, 누적 당근, 연속 출석, 순위와 공개 게시물·댓글·반응 수는 다른 라운지 이용자에게 표시될 수 있습니다. 소셜 계정 이름과 기기의 프로필 이미지 파일은 공개하지 않습니다.</p>
 
-      <h3>1.4 건강·피트니스 데이터 및 챌린지 자동 검증 정보</h3>
-      <p>자동 검증은 사용자가 해당 챌린지 미션에 참여하고 운영체제 권한 화면에서 명시적으로 허용한 경우에만 작동합니다.</p>
+      <h3>1.4 챌린지·푸시·번역</h3>
+      <p>챌린지에 참여하면 설치·추천 식별자 기반 참여자 키, 닉네임, 캐릭터, 역할·준비 상태, 방·미션 정보, 채팅, 완료·기여 기록, 응원 내역이 Supabase에 저장되고 같은 방 팀원에게 표시될 수 있습니다. 알림을 허용하면 Expo Push Token, 플랫폼, 언어와 알림 전달 상태도 저장됩니다.</p>
+      <p>채팅 번역을 실행하면 방·참여자·댓글 식별자, 목표 언어와 채팅 원문이 Supabase 서버 함수를 거쳐 Google Cloud Translation에서 처리되고 번역 결과가 수신 기기에 캐시될 수 있습니다.</p>
+
+      <h3>1.5 챌린지 자동 검증</h3>
+      <p>사용자가 미션 설명을 확인하고 운영체제 권한을 허용한 경우에만 작동합니다.</p>
       <ul>
-        <li><strong>접근 및 수집하는 건강 데이터:</strong> 걸음 수 미션을 위해 Apple HealthKit 또는 Android Health Connect가 계산한 해당 날짜의 일별 누적 걸음 수에 읽기 전용으로 접근하고 수집합니다. Android에서 Health Connect의 기기 걸음 수를 사용할 수 없으면 지원되는 Android 8 이상 기기에서 Google Local Recording API(기기 걸음 수 카운터)를 사용하며, 사용자가 미션 연결을 선택하고 기기 내 기록 구독이 시작된 뒤의 걸음 수만 집계합니다.</li>
-        <li><strong>이용 목적:</strong> 사용자가 선택한 ‘팀원 모두 1일 6천 보 걷기’ 미션의 목표 진행량과 성공·실패를 자동으로 계산하고 챌린지 진행 상황을 표시하는 데만 사용합니다.</li>
-        <li><strong>서버 전송 및 공유:</strong> 일별 누적 걸음 수, 목표 진행량, 성공·실패 상태와 확인 시각은 Supabase에 동기화되어 같은 챌린지 방의 팀원에게 표시될 수 있습니다.</li>
-        <li><strong>수집·전송하지 않는 건강 데이터:</strong> 개별 걸음 샘플, 운동 경로, 위치, 심박수, 수면, 체중, 의료 기록 등 다른 건강 데이터는 수집하거나 서버에 업로드하지 않습니다.</li>
-        <li><strong>광고 사용 금지:</strong> 건강·피트니스 데이터는 광고 제공, 광고 타겟팅, 광고 성과 측정 또는 개인 맞춤화에 사용하거나 광고주에게 제공·판매하지 않습니다.</li>
-        <li><strong>기타 자동 검증:</strong> 밤 10시 이후 휴대폰 미사용 미션에서는 iOS Family Controls·DeviceActivity 또는 Android 사용 정보 접근을 통해 22:00~24:00 사이 앱·웹 사용 여부를 기기에서 판정합니다. 앱 이름, 패키지 식별자, 방문 사이트, 개별 사용 이벤트와 사용 기록은 서버에 업로드하지 않으며 성공·실패 상태와 확인 시각만 동기화될 수 있습니다.</li>
+        <li>걸음 수 미션은 Apple HealthKit, Android Health Connect 또는 지원되는 Android 기기의 Google Local Recording API에서 일별 누적 걸음 수를 읽습니다.</li>
+        <li>밤 10시 이후 휴대폰 미사용 미션은 iOS Family Controls·DeviceActivity 또는 Android 사용 정보 접근으로 22:00~24:00 사이 사용 여부를 기기에서 판정합니다.</li>
+        <li>개별 걸음 샘플, 운동 경로, 위치, 심박수, 수면, 체중, 의료 기록, 앱 이름, 패키지 식별자, 방문 사이트와 개별 사용 이벤트는 서버에 업로드하지 않습니다.</li>
+        <li>일별 누적 걸음 수, 목표 진행량, 성공·실패, 측정 출처·플랫폼, 시간대 오프셋과 검증 시각만 챌린지 진행을 위해 동기화될 수 있습니다.</li>
       </ul>
 
-      <h3>1.5 광고 제공 관련 정보</h3>
-      <p>보상형 광고를 요청하거나 시청하는 경우 Google Mobile Ads SDK가 광고 제공, 광고 성과 측정, 서비스 품질 개선, 부정 사용 방지를 위해 다음 정보를 처리할 수 있습니다.</p>
-      <ul>
-        <li>IP 주소 및 이를 통해 추정될 수 있는 대략적인 위치 정보</li>
-        <li>광고 식별자, 앱 세트 ID 등 기기 또는 계정 관련 식별자</li>
-        <li>앱 실행, 탭, 광고 요청, 광고 시청 등 앱 및 광고 상호작용 정보</li>
-        <li>앱 실행 시간, 멈춤, 에너지 사용량 등 SDK 및 앱 성능 관련 진단 정보</li>
-      </ul>
+      <h3>1.6 추천·초대와 광고</h3>
+      <p>추천 링크를 만들거나 열면 초대자·수신자의 추천 및 설치 식별자, 연결된 인증 사용자 ID와 수락 날짜가 Supabase에 저장될 수 있습니다. 수신자 수락 등록은 링크를 열 때 자동 처리될 수 있습니다.</p>
+      <p>보상형 광고 이용 시 Google Mobile Ads SDK가 IP 주소와 대략적 위치, 광고 식별자 또는 앱 세트 ID, 앱·광고 상호작용과 진단 정보를 처리할 수 있습니다. 광고 요청은 비개인 맞춤 옵션으로 전송합니다.</p>
+      <p>해빗은 전화번호, GPS 기반 정확한 위치, 연락처, 마이크 녹음, SMS, 통화 기록 또는 결제정보를 앱에서 수집하지 않으며 별도의 행동 분석·오류 추적 SDK와 생성형 AI 서비스를 사용하지 않습니다.</p>
 
       <h2>2. 이용 목적</h2>
       <ul>
-        <li>습관 등록, 체크인, 적립금 계산, 사용 기록, 월 목표 관리</li>
-        <li>날짜별 통계, 하루 마감 편지, 앱 진행 상태 표시</li>
-        <li>매일 오후 8시 하루 마감 알림과 사용자가 설정한 습관 리마인더 제공</li>
-        <li>프로필, 캐릭터, 알림음, 배경 음악 등 개인 설정 유지</li>
-        <li>Google, Apple, Kakao 계정 기반 로그인, Supabase 백업, 복원, 동기화, 계정 삭제 처리</li>
-        <li>사용자가 선택한 챌린지의 일별 걸음 수 또는 밤 10시 이후 앱·웹 미사용 자동 검증과 같은 챌린지 팀원 간 진행 상황 공유</li>
-        <li>챌린지 팀 채팅 제공 및 수신 팀원의 앱 언어에 맞춘 자동 번역</li>
-        <li>선택형 보상형 광고 제공, 광고 보상 처리, 광고 품질 측정, 부정 사용 방지</li>
-        <li>오류 대응, 데이터 복구, 보안 및 부정 사용 방지</li>
+        <li>습관·적립금·목표·통계·하루 마감과 캐릭터·보상 제공</li>
+        <li>리마인더, 하루 마감 알림과 챌린지 푸시 제공</li>
+        <li>선택형 계정 인증, 클라우드 백업·복원·복구</li>
+        <li>라운지 순위·게시글·댓글·반응·신고·차단 제공</li>
+        <li>챌린지 팀 채팅·번역·미션 검증과 진행 공유</li>
+        <li>추천 및 광고 보상, 보안, 장애 대응과 부정 사용 방지</li>
       </ul>
 
-      <h2>3. 외부 서비스 및 처리 위탁</h2>
-      <p>해빗은 서비스 제공을 위해 다음 외부 서비스를 사용할 수 있습니다.</p>
+      <h2>3. 보유 및 이용 기간</h2>
+      <div class="table-wrap"><table><thead><tr><th>정보</th><th>보유 기간</th></tr></thead><tbody>
+        <tr><td>기기 앱 데이터·설치/추천 식별자·번역 캐시·프로필 이미지</td><td>앱 삭제 또는 운영체제 앱 데이터 삭제 시까지</td></tr>
+        <tr><td>소셜 인증·클라우드 데이터·안전 백업</td><td>클라우드 계정 삭제 또는 삭제 요청 완료 시까지</td></tr>
+        <tr><td>라운지 익명 프로필과 활동</td><td>별도 라운지 데이터 삭제 또는 요청 완료 시까지</td></tr>
+        <tr><td>개별 삭제한 라운지 게시글·댓글</td><td>본문은 비워지지만 삭제 상태와 일부 메타데이터는 전체 라운지 데이터 삭제 전까지 유지될 수 있음</td></tr>
+        <tr><td>챌린지 멤버·미션 진행</td><td>방 나가기 또는 방 삭제 시까지</td></tr>
+        <tr><td>챌린지 채팅·응원·상호작용</td><td>방 삭제 시까지. 작성자가 나가도 다른 참여자가 남아 있으면 유지될 수 있음</td></tr>
+        <tr><td>챌린지 푸시 토큰</td><td>챌린지 멤버 또는 방 삭제 시까지</td></tr>
+        <tr><td>계정과 연결되지 않은 추천 기록</td><td>별도 자동 삭제 기간이 설정되어 있지 않아 이메일 삭제 요청 시까지 남을 수 있음</td></tr>
+      </tbody></table></div>
+      <p>챌린지 방의 만료 시각만으로 서버 행이 즉시 자동 삭제되지는 않습니다. 법령상 별도 보존이 필요한 경우 해당 기간 동안 분리 보관한 후 파기합니다.</p>
+
+      <h2>4. 다른 이용자에 대한 공개·제공</h2>
       <ul>
-        <li>Google 로그인: 사용자의 선택에 따른 계정 인증</li>
-        <li>Apple 로그인: 사용자의 선택에 따른 계정 인증</li>
-        <li>Kakao 로그인: 사용자의 선택에 따른 계정 인증</li>
-        <li>Supabase: 인증 세션 관리, 클라우드 데이터 저장, 백업, 복원, 계정 삭제 처리</li>
-        <li>Google Cloud Translation: 챌린지 팀 채팅을 수신 팀원의 앱 언어로 자동 번역</li>
-        <li>Apple HealthKit, Android Health Connect 및 지원되는 Android 8 이상 기기의 Google Local Recording API: 선택형 걸음 수 미션의 일별 누적 걸음 수 제공</li>
-        <li>iOS Family Controls·DeviceActivity 및 Android 사용 정보 접근: 선택형 밤 10시 이후 휴대폰 미사용 미션의 기기 내 판정</li>
-        <li>Google AdMob 및 Google Mobile Ads SDK: 선택형 보상형 광고 제공, 광고 성과 측정, 광고 품질 유지, 부정 사용 방지</li>
-        <li>Expo 및 운영체제 API: 알림 예약, 오디오 재생, 사용자가 선택한 프로필 이미지 처리</li>
+        <li>라운지 이용자: 닉네임, 캐릭터, 누적 당근, 연속 출석, 순위와 공개 콘텐츠</li>
+        <li>같은 챌린지 방 참여자: 닉네임, 캐릭터, 준비 상태, 채팅, 미션 진행·기여, 일별 걸음 수 기반 진행 결과와 응원</li>
       </ul>
-      <p>해빗은 사용자의 습관 기록, 적립 기록, 프로필 이미지 파일을 광고주에게 판매하지 않습니다. 광고 제공 과정에서 Google Mobile Ads SDK가 처리하는 정보는 Google의 광고 제공, 분석, 부정 사용 방지 목적에 따라 Google에 전송될 수 있습니다. 법령상 요구, 사용자의 명시적 요청, 서비스 제공에 필요한 위탁 범위를 제외하고 개인정보를 제3자에게 제공하지 않습니다.</p>
-      <p>외부 서비스 제공자에 관한 상세 내용은 <a href="../third-party-consent/" data-preserve-lang>개인정보 제3자 제공 및 처리위탁 동의</a>에서 확인할 수 있습니다.</p>
+      <p>해빗은 개인정보를 판매하지 않으며 공개·공유 기능, 서비스 제공에 필요한 처리 위탁, 법령상 근거 또는 별도 동의가 있는 경우를 제외하고 제3자에게 제공하지 않습니다.</p>
 
-      <h2>4. 권한 사용</h2>
+      <h2>5. 외부 서비스와 처리 위탁</h2>
+      <div class="table-wrap"><table><thead><tr><th>서비스</th><th>업무</th><th>정보</th></tr></thead><tbody>
+        <tr><td>Supabase</td><td>인증, 데이터베이스, 서버 함수와 백업</td><td>인증·설치 식별자, 앱 백업, 라운지, 챌린지, 추천 정보</td></tr>
+        <tr><td>Google</td><td>로그인, 번역, 광고·UMP, Android 푸시와 걸음 수</td><td>인증·프로필, 번역 채팅, 광고·동의·푸시 정보, 기기 걸음 수</td></tr>
+        <tr><td>Apple</td><td>로그인, HealthKit·Family Controls·DeviceActivity, APNs</td><td>인증·허용된 이메일/이름, 기기 내 건강·사용 판정, 푸시 정보</td></tr>
+        <tr><td>Kakao</td><td>선택형 로그인</td><td>토큰, Kakao ID, 허용된 이메일·닉네임·프로필 이미지 URL</td></tr>
+        <tr><td>Expo</td><td>챌린지 푸시 중계</td><td>Expo Push Token, 알림 제목·본문과 챌린지 식별정보</td></tr>
+      </tbody></table></div>
+      <p>자세한 내용은 <a href="../third-party-consent/" data-preserve-lang>개인정보 제3자 제공 및 처리위탁 동의</a>에서도 확인할 수 있습니다.</p>
+
+      <h2>6. 국외 처리</h2>
+      <p>Supabase, Google, Apple, Kakao와 Expo의 인프라 위치에 따라 인증, 클라우드 저장, 번역, 광고와 푸시 정보가 국외에서 처리될 수 있으며 기능 이용 시 암호화된 네트워크로 전송됩니다. 정확한 계약 법인, 처리 국가와 공급자별 보유기간은 코드만으로 확인되지 않아 실제 계약·프로젝트 리전 확인 후 보완해야 합니다.</p>
+
+      <h2>7. 권한·자동 저장과 거부 방법</h2>
+      <p>앱은 SecureStore, AsyncStorage와 앱 문서 저장소에 식별자, 세션, 앱 데이터, 설정과 프로필 이미지를 저장합니다. 웹에서는 브라우저 저장공간에 세션을 저장할 수 있습니다. 앱이 직접 웹 쿠키를 생성하지는 않지만 외부 로그인 페이지는 공급자 쿠키를 사용할 수 있습니다.</p>
+      <p>운영체제 설정에서 알림, 사진, 건강, 활동 인식, 스크린 타임·사용 정보와 광고 추적 권한을 철회할 수 있고, 앱 설정에서 광고 개인정보 선택 화면을 다시 열 수 있습니다. 브라우저 또는 앱 데이터를 삭제하면 로그인 유지·복원·추천·라운지·챌린지 기능이 제한될 수 있습니다.</p>
+
+      <h2>8. 파기와 이용자 권리</h2>
+      <p>처리 목적 또는 보유기간이 끝난 전자 정보는 확인 후 복구하기 어려운 방식으로 삭제합니다. 이용자는 개인정보의 열람, 정정, 삭제, 처리정지와 동의 철회를 요청할 수 있습니다.</p>
       <ul>
-        <li>알림 권한: 매일 오후 8시 하루 마감 편지와 습관 리마인더를 보내기 위해 사용합니다.</li>
-        <li>사진 접근 권한: 사용자가 직접 프로필 이미지를 선택할 때만 사용합니다. 선택한 이미지 파일은 기기에 저장되며 클라우드 백업 서버로 업로드하지 않습니다.</li>
-        <li>건강·피트니스 읽기 권한 및 지원되는 Android 버전의 활동 인식(ACTIVITY_RECOGNITION) 권한: 사용자가 걸음 수 자동 검증 미션을 연결할 때 해당 날짜의 일별 누적 걸음 수를 확인하는 데만 사용합니다.</li>
-        <li>iOS 스크린 타임 접근 및 Android 사용 정보 접근: 사용자가 밤 10시 이후 미사용 자동 검증을 켠 경우 22:00~24:00 앱·웹 사용 여부를 판정하는 데만 사용합니다.</li>
-        <li>인터넷 접근: 소셜 로그인, Supabase 동기화, 백업 및 복원에 사용합니다.</li>
-        <li>오디오 재생: 배경 음악과 알림음 미리듣기에 사용합니다.</li>
+        <li>클라우드 계정·백업: 설정 &gt; MY &gt; 계정 삭제</li>
+        <li>라운지 전체 데이터: 라운지 &gt; 방패 아이콘 &gt; 내 라운지 데이터 삭제</li>
+        <li>기기 로컬 데이터·프로필 이미지: 앱 삭제 또는 운영체제 앱 데이터 삭제</li>
+        <li>챌린지·추천 데이터와 기타 요청: <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a></li>
       </ul>
-      <p>건강·피트니스 및 사용 시간 권한은 선택 사항이며 운영체제 설정에서 언제든 철회할 수 있습니다. 권한을 허용하지 않으면 해당 자동 검증 미션만 이용할 수 없고 다른 핵심 기능은 계속 사용할 수 있습니다.</p>
-      <p>해빗은 마이크 녹음, 위치, 연락처, 캘린더, SMS, 통화 기록 권한을 요청하지 않습니다.</p>
+      <p>클라우드 계정 삭제는 로컬 데이터, 별도 라운지 익명 계정과 설치 식별자 기반 챌린지 기록을 함께 삭제하지 않습니다. 이메일 요청은 필요한 범위에서 본인 또는 정당한 대리인임을 확인한 후 처리합니다.</p>
 
-      <h2>5. 보관 및 삭제</h2>
-      <p>기기 내부에 저장된 데이터는 사용자가 앱을 삭제하거나 기기 설정에서 앱 데이터를 삭제할 때까지 보관될 수 있습니다. 계정 연결 후 Supabase에 동기화된 데이터는 사용자가 계정을 삭제하거나 삭제 요청을 완료할 때까지 보관됩니다. 자동 검증에 사용된 개별 걸음 샘플 등 원시 건강 데이터는 해빗 서버에 보관하지 않습니다. Supabase에 동기화된 일별 누적 걸음 수, 목표 진행량과 미션 결과는 챌린지 기록으로 보관되며, 사용자가 해당 챌린지에서 나가거나 챌린지 방이 삭제될 때 삭제됩니다.</p>
+      <h2>9. 안전성 확보와 어린이</h2>
+      <p>인증 세션을 보안 저장소에 보관하고 Supabase 행 수준 보안과 인증된 서버 함수로 접근을 제한합니다. 해빗은 어린이를 주요 대상으로 하지 않지만, 현재 만 14세 미만 가입 제한 또는 법정대리인 동의를 확인하는 별도 기술 절차는 제공하지 않습니다.</p>
+
+      <h2>10. 개인정보 보호 문의</h2>
       <ul>
-        <li>앱 내 경로: 설정 &gt; MY &gt; 계정 삭제</li>
-        <li>이메일 요청: <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a></li>
-        <li>공개 데이터 삭제 안내 페이지: <a href="../data-deletion/" data-preserve-lang>계정 및 데이터 삭제 안내</a></li>
+        <li>개인정보 보호책임자: 박건호</li>
+        <li>직책: 개인정보 보호책임자</li>
+        <li>이메일: <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a></li>
+        <li>전화번호: <a href="tel:+821054756150">010-5475-6150</a></li>
       </ul>
-      <p>앱 내 계정 삭제를 실행하면 Supabase에 저장된 프로필, 설정, 습관, 습관 기록, 사용 기록, 하루 마감 기록, 인증 계정이 삭제됩니다. 이메일로 삭제를 요청하는 경우 본인 확인 후 합리적인 기간 내에 처리합니다.</p>
-
-      <h2>6. 보안</h2>
-      <p>해빗은 인증 세션을 네이티브 보안 저장소에 보관하고, 서버로 전송되는 정보에 HTTPS 암호화를 사용하며, Supabase 데이터베이스의 행 수준 보안 정책을 통해 로그인한 사용자와 해당 챌린지 참여자에게 필요한 범위에서만 접근하도록 설계합니다. 다만 네트워크, 운영체제, 외부 서비스 장애나 사용자의 기기 보안 상태에 따라 위험이 완전히 제거될 수는 없습니다.</p>
-
-      <h2>7. 어린이 개인정보</h2>
-      <p>해빗은 어린이를 주요 대상으로 하는 서비스가 아닙니다. 만 14세 미만 등 법정대리인의 동의가 필요한 사용자는 보호자의 동의와 관리 아래 서비스를 이용해야 합니다.</p>
-
-      <h2>8. 국외 이전</h2>
-      <p>Google, Apple, Kakao 및 Supabase 등 외부 서비스의 인프라 위치에 따라 정보가 국내외 서버에서 처리될 수 있습니다. 해빗은 서비스 제공에 필요한 범위에서만 해당 외부 서비스를 사용합니다.</p>
-
-      <h2>9. 변경 안내</h2>
-      <p>기능, 법령, 스토어 정책 또는 외부 서비스 구성이 변경되는 경우 개인정보 처리방침이 수정될 수 있습니다. 중요한 변경은 앱, 스토어 페이지 또는 공개 정책 페이지를 통해 안내합니다.</p>
-
-      <h2>10. 문의</h2>
-      <p>개인정보, 계정, 데이터 삭제 요청은 <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>으로 문의할 수 있습니다.</p>
-      <footer>Habbit Privacy Policy</footer>
+      <p>기능·법령·스토어 정책 또는 외부 서비스가 바뀌면 처리방침을 수정하고 중요한 변경은 앱, 스토어 또는 이 페이지에서 알립니다.</p>
+      <footer>공고일 및 시행일: 2026년 8월 8일 · Habbit Privacy Policy</footer>
     </section>
 
     <section data-lang-content="en">
       <h1>Habbit Privacy Policy</h1>
-      <p class="meta">Effective date: July 31, 2026</p>
-      <p class="lead">Habbit processes only the information needed to securely store the habit records, virtual savings records, and app settings you enter, and to provide app features. If you choose an automatically verified step mission, Habbit may access, collect, and use daily cumulative step count, which is health and fitness data, from Apple HealthKit, Android Health Connect, or the device step counter on supported Android devices. The app may include Google AdMob rewarded ads for daily mission rewards, and ad requests are sent with non-personalized ad options. Habbit does not use or sell health data for advertising or ad personalization. The app does not request contacts or location permission and does not collect precise location, although Google Mobile Ads SDK may infer approximate location from an IP address.</p>
+      <p class="meta">Effective date: August 8, 2026</p>
+      <p class="lead">Habbit processes the information below to provide habit management, characters, optional cloud backup, the Lounge, challenges, and rewarded ads. If you choose automatic step verification, Habbit may access daily cumulative step count, which is health and fitness data. Health data is not used or sold for advertising or personalization.</p>
 
-      <h2>1. Information We Process</h2>
-      <p>Depending on how you use the app, Habbit may store the following information on your device or in account-based sync storage.</p>
-
-      <h3>1.1 App Data You Enter or Create</h3>
+      <h2>1. Information and Purposes</h2>
+      <h3>1.1 On-device app data</h3>
       <ul>
-        <li>Habit name, habit type, per-habit amount, display order, and habit reminder time</li>
-        <li>Habit completion records and daily completion counts</li>
-        <li>Virtual savings usage records, including amount, date, and memo</li>
-        <li>Monthly goals, daily wrap-up letters, daily settlement results, and statistics</li>
-        <li>App progress such as character, room, accessories, rewards, attendance, and experience points</li>
-        <li>App settings such as feedback intensity, notification sound, and background music on/off status</li>
-        <li>Profile images selected by the user. Profile image files are stored on the device and are not included in cloud backups.</li>
-        <li>Messages you enter in challenge team chat. Messages are shown to members of the same room and may be processed temporarily by Google Cloud Translation to display them in each teammate's app language.</li>
+        <li>Habit names, types, amounts, reminders, and completion counts</li>
+        <li>Virtual savings usage, dates, memos, goals, daily letters, mood, settlement results, and statistics</li>
+        <li>Nickname, character state and outfit, positioning, carrots, experience, attendance, achievements, rewards, and friend characters</li>
+        <li>Feedback, settlement time, sound, music, language, notification IDs, and operational state</li>
+        <li>An Android installation identifier based on Android ID, or a randomly generated installation identifier on other platforms, and a referral identifier</li>
+        <li>A user-selected profile image stored in app-specific device storage and excluded from cloud backup</li>
       </ul>
 
-      <h3>1.2 Account Connection and Sync Information</h3>
-      <p>If you connect a Google, Apple, or Kakao account, the following information may be processed for authentication and cloud backup.</p>
-      <ul>
-        <li>Account identifiers provided through Google, Apple, Kakao sign-in, or Supabase authentication</li>
-        <li>Supabase authentication user ID and authentication session information</li>
-        <li>Device installation identifier</li>
-        <li>App data stored in Supabase sync tables</li>
-      </ul>
-      <p>Habbit's Supabase sync storage uses the profiles, user_settings, habits, habit_logs, spends, and daily_settlements tables. Each table applies row-level security policies so that signed-in users can access only their own data.</p>
+      <h3>1.2 Optional accounts and cloud backup</h3>
+      <p>If you connect Google, Apple, or Kakao, provider account identifiers, permitted email, name, nickname and profile information, tokens, Supabase user ID and session, installation identifier, and synchronized app data may be processed. Kakao ID, platform, and profile-image URL may also be stored in authentication metadata when permitted.</p>
+      <p>Before cloud replacement sync, a complete safety backup of existing server data, record counts, reason, and time may be stored in Supabase. Connecting an account is optional.</p>
 
-      <h3>1.3 Device Storage Information</h3>
-      <ul>
-        <li>Basic app data is stored in internal storage on your device.</li>
-        <li>Authentication sessions in the native app are stored in SecureStore. Session information saved by earlier versions may be migrated to SecureStore the first time it is read.</li>
-        <li>On the web, authentication sessions may be maintained through browser-based storage.</li>
-        <li>Operational information such as notification schedule IDs and onboarding completion status may be stored on the device.</li>
-      </ul>
+      <h3>1.3 Lounge</h3>
+      <p>After onboarding, setting a nickname may automatically create a separate anonymous Supabase ID and session for Lounge ranking sync. Nickname, bio, language, character and outfit, carrot total, attendance streak, posts, comments, reactions, reports, and blocks may be stored. Nickname, character, rank, public content, and reaction counts may be visible to Lounge users. Social-account names and local profile images are not public.</p>
 
-      <h3>1.4 Health and Fitness Data and Automatic Challenge Verification</h3>
-      <p>Automatic verification operates only when you join the relevant challenge mission and expressly allow access on the operating system permission screen.</p>
+      <h3>1.4 Challenges, push, and translation</h3>
+      <p>Challenges may store an installation-identifier-based participant key, nickname, character, role and readiness, room and mission data, chat, completion and contribution records, and cheers in Supabase and show them to teammates. If notifications are allowed, Expo Push Token, platform, language, and delivery state are also stored.</p>
+      <p>Translation sends room, participant and comment identifiers, target language, and chat text through a Supabase function to Google Cloud Translation. Results may be cached on receiving devices.</p>
+
+      <h3>1.5 Automatic verification</h3>
       <ul>
-        <li><strong>Health data accessed and collected:</strong> For a step mission, Habbit obtains read-only access to and collects the daily cumulative step count calculated for the relevant date by Apple HealthKit or Android Health Connect. If device steps are unavailable through Health Connect, Habbit uses the Google Local Recording API (device step counter) on supported Android 8+ devices and counts only steps recorded after you choose to connect the mission and the on-device recording subscription starts.</li>
-        <li><strong>Purpose of use:</strong> Daily step count is used only to calculate goal progress and pass/fail status for the optional “Everyone walks 6,000 steps today” mission and to display challenge progress.</li>
-        <li><strong>Server transmission and sharing:</strong> Daily cumulative step count, goal progress, pass/fail status, and verification time may be synchronized to Supabase and displayed to members of the same challenge room.</li>
-        <li><strong>Health data not collected or transmitted:</strong> Habbit does not collect or upload individual step samples, workout routes, location, heart rate, sleep, weight, medical records, or other health data to its server.</li>
-        <li><strong>No advertising use:</strong> Health and fitness data is not used for ad delivery, ad targeting, ad performance measurement, or personalization, and is not provided or sold to advertisers.</li>
-        <li><strong>Other automatic verification:</strong> For the no-phone-after-10-p.m. mission, Habbit determines on device whether app or web use occurred between 22:00 and 24:00 through iOS Family Controls and DeviceActivity or Android Usage Access. App names, package identifiers, visited sites, individual usage events, and usage history are not uploaded to the server; only pass/fail status and verification time may be synchronized.</li>
+        <li>With permission, step missions read daily cumulative steps from Apple HealthKit, Android Health Connect, or Google Local Recording API on supported Android devices.</li>
+        <li>The no-phone-after-10-p.m. mission determines use between 22:00 and 24:00 on device through iOS Family Controls and DeviceActivity or Android Usage Access.</li>
+        <li>Individual step samples, routes, location, heart rate, sleep, weight, medical records, app names, package IDs, visited sites, and individual usage events are not uploaded.</li>
+        <li>Daily steps, progress, pass/fail, source, platform, timezone offset, and verification time may be synchronized for challenge progress.</li>
       </ul>
 
-      <h3>1.5 Ad Delivery Information</h3>
-      <p>When you request or watch rewarded ads, Google Mobile Ads SDK may process the following information to deliver ads, measure ad performance, improve service quality, and prevent misuse.</p>
-      <ul>
-        <li>IP address and approximate location that may be inferred from it</li>
-        <li>Device or account-related identifiers such as advertising ID and app set ID</li>
-        <li>App and ad interaction information, such as app launches, taps, ad requests, and ad views</li>
-        <li>SDK and app performance diagnostics, such as app launch time, hangs, and energy usage</li>
-      </ul>
+      <h3>1.6 Referrals and ads</h3>
+      <p>Creating or opening a referral link may store inviter and recipient referral or installation identifiers, linked auth user IDs, and acceptance date. Recipient acceptance may be registered automatically when the link is opened.</p>
+      <p>Google Mobile Ads SDK may process IP address and approximate location, advertising or app-set identifiers, app/ad interactions, and diagnostics. Requests use non-personalized ad options. Habbit does not collect phone numbers, precise GPS location, contacts, microphone recordings, SMS, call logs, or payment information, and does not use separate analytics, crash-reporting, or generative-AI services.</p>
 
       <h2>2. Purposes of Use</h2>
+      <p>Information is used for habits, virtual savings, goals, statistics, characters and rewards, reminders and challenge push, optional authentication and cloud recovery, Lounge and challenge features, chat translation and verification, referral and ad rewards, security, recovery, and misuse prevention.</p>
+
+      <h2>3. Retention</h2>
+      <div class="table-wrap"><table><thead><tr><th>Information</th><th>Retention</th></tr></thead><tbody>
+        <tr><td>Local app data, identifiers, cache, and profile image</td><td>Until app or operating-system app data deletion</td></tr>
+        <tr><td>Social authentication, cloud data, and safety backups</td><td>Until cloud account deletion or completed request</td></tr>
+        <tr><td>Anonymous Lounge identity and activity</td><td>Until separate Lounge deletion or completed request</td></tr>
+        <tr><td>Individually deleted Lounge content</td><td>Body is cleared; limited metadata may remain until the Lounge identity is deleted</td></tr>
+        <tr><td>Challenge membership and mission progress</td><td>Until leaving or room deletion</td></tr>
+        <tr><td>Challenge chat, cheers, and interactions</td><td>Until room deletion; may remain after the author leaves while others remain</td></tr>
+        <tr><td>Challenge push token</td><td>Until challenge membership or room deletion</td></tr>
+        <tr><td>Unlinked referral records</td><td>No separate automatic deletion period; may remain until an email request</td></tr>
+      </tbody></table></div>
+      <p>A challenge expiration timestamp does not itself immediately delete server rows.</p>
+
+      <h2>4. Public and Third-Party Sharing</h2>
+      <p>Lounge users may receive nickname, character, carrot total, attendance streak, rank, and public content. Same-room challenge members may receive nickname, character, readiness, chat, progress and contribution, daily-step-based progress, and cheers. Habbit does not sell personal information and otherwise shares it only for selected public features, necessary processing, legal requirements, or separate consent.</p>
+
+      <h2>5. Service Providers</h2>
       <ul>
-        <li>Habit creation, check-ins, virtual savings calculation, usage records, and monthly goal management</li>
-        <li>Date-based statistics, daily wrap-up letters, and app progress display</li>
-        <li>Daily wrap-up notifications at 8:00 PM and habit reminders set by the user</li>
-        <li>Profile, character, notification sound, background music, and other personal settings</li>
-        <li>Google, Apple, Kakao account-based sign-in, Supabase backup, restore, sync, and account deletion</li>
-        <li>Automatic verification of daily steps or no app/web use after 10 p.m. for a challenge you choose, and sharing challenge progress with members of the same room</li>
-        <li>Challenge team chat and automatic translation into the receiving teammate's app language</li>
-        <li>Optional rewarded ads, ad reward processing, ad quality measurement, and misuse prevention</li>
-        <li>Error handling, data recovery, security, and prevention of misuse</li>
+        <li>Supabase: authentication, database, server functions, backup, Lounge, challenges, and referrals</li>
+        <li>Google: sign-in, Cloud Translation, Mobile Ads and UMP, Android push, and device steps</li>
+        <li>Apple: sign-in, HealthKit, Family Controls and DeviceActivity, and APNs</li>
+        <li>Kakao: optional sign-in, including permitted Kakao ID, email, nickname, and profile-image URL</li>
+        <li>Expo: challenge push relay using push token and notification content</li>
       </ul>
+      <p>See also <a href="../third-party-consent/" data-preserve-lang>Third-Party Consent</a>.</p>
 
-      <h2>3. Third-Party Services and Processing</h2>
-      <p>Habbit may use the following third-party services to provide the service.</p>
+      <h2>6. International Processing</h2>
+      <p>Authentication, cloud storage, translation, ads, and push information may be processed internationally depending on Supabase, Google, Apple, Kakao, and Expo infrastructure, and is transmitted over encrypted networks when features are used. Exact contracting entities, countries, and provider retention periods cannot be determined from code alone and must be supplemented after checking contracts and project regions.</p>
+
+      <h2>7. Permissions, Storage, and Choices</h2>
+      <p>The app uses SecureStore, AsyncStorage, and app document storage for identifiers, sessions, app data, settings, and profile images. Web sessions may use browser storage. The app does not directly create web cookies, but external sign-in pages may use provider cookies.</p>
+      <p>You may revoke notification, photo, health, activity-recognition, screen-time or usage-access, and ad-tracking permissions in system settings, reopen ad privacy choices in the app, or clear browser or app data. Some sign-in, restore, referral, Lounge, or challenge features may then be limited.</p>
+
+      <h2>8. Deletion and Your Rights</h2>
+      <p>Electronic information is deleted in a manner intended to make recovery difficult after its purpose or retention period ends. You may request access, correction, deletion, restriction, or withdrawal of consent.</p>
       <ul>
-        <li>Google Sign-In: account authentication chosen by the user</li>
-        <li>Apple Sign-In: account authentication chosen by the user</li>
-        <li>Kakao Sign-In: account authentication chosen by the user</li>
-        <li>Supabase: authentication session management, cloud data storage, backup, restore, and account deletion processing</li>
-        <li>Google Cloud Translation: automatic translation of challenge team chat into the receiving teammate's app language</li>
-        <li>Apple HealthKit, Android Health Connect, and the Google Local Recording API on supported Android 8+ devices: daily cumulative step count for optional step missions</li>
-        <li>iOS Family Controls and DeviceActivity and Android Usage Access: on-device verification for the optional no-phone-after-10-p.m. mission</li>
-        <li>Google AdMob and Google Mobile Ads SDK: optional rewarded ads, ad performance measurement, ad quality maintenance, and misuse prevention</li>
-        <li>Expo and operating system APIs: scheduled notifications, audio playback, and processing profile images selected by the user</li>
+        <li>Cloud account and backup: Settings &gt; MY &gt; Delete account</li>
+        <li>All Lounge data: Lounge &gt; shield icon &gt; Delete my Lounge data</li>
+        <li>Local data and profile image: delete the app or operating-system app data</li>
+        <li>Challenge, referral, and other requests: <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a></li>
       </ul>
-      <p>Habbit does not sell your habit records, virtual savings records, or profile image files to advertisers. Information processed by Google Mobile Ads SDK during ad delivery may be sent to Google for Google's ad delivery, analytics, and misuse prevention purposes. Except where required by law, requested by the user, or necessary for service processing, Habbit does not provide personal information to third parties.</p>
-      <p>More details about third-party service providers are available in the <a href="../third-party-consent/" data-preserve-lang>Third-Party Consent</a>.</p>
+      <p>Cloud account deletion does not also delete local data, the separate anonymous Lounge account, or installation-identifier-based challenge records. Email requests may require identity or representative verification.</p>
 
-      <h2>4. Permissions</h2>
-      <ul>
-        <li>Notifications: used to send daily wrap-up letters at 8:00 PM and habit reminders.</li>
-        <li>Photo access: used only when you choose a profile image yourself. The selected image file is stored on your device and is not uploaded to the cloud backup server.</li>
-        <li>Health and fitness read access and Activity Recognition (ACTIVITY_RECOGNITION) on supported Android versions: used only to obtain daily cumulative steps for the relevant date when you connect an automatically verified step mission.</li>
-        <li>iOS Screen Time access and Android Usage Access: used only to determine app and web use between 22:00 and 24:00 when you enable automatic verification for the no-phone-after-10-p.m. mission.</li>
-        <li>Internet access: used for social sign-in, Supabase sync, backup, and restore.</li>
-        <li>Audio playback: used for background music and notification sound previews.</li>
-      </ul>
-      <p>Health, fitness, and screen-use permissions are optional and may be revoked at any time in system settings. If you decline them, only the related automatic-verification mission is unavailable; other core features remain available.</p>
-      <p>Habbit does not request permissions for microphone recording, precise location, contacts, calendar, SMS, or call logs.</p>
-
-      <h2>5. Retention and Deletion</h2>
-      <p>Data stored inside your device may be retained until you delete the app or delete app data through device settings. Data synced to Supabase after account connection is retained until you delete your account or complete a deletion request. Raw health data such as individual step samples used for automatic verification is not retained on Habbit's server. Daily cumulative step count, goal progress, and mission results synchronized to Supabase are retained as challenge records and are deleted when you leave the related challenge or the challenge room is deleted.</p>
-      <ul>
-        <li>In-app path: Settings &gt; MY &gt; Delete account</li>
-        <li>Email request: <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a></li>
-        <li>Public deletion instructions: <a href="../data-deletion/" data-preserve-lang>Account and Data Deletion</a></li>
-      </ul>
-      <p>When you delete your account in the app, profiles, settings, habits, habit records, spending records, daily wrap-up records, and the authentication account stored in Supabase are deleted. If you request deletion by email, Habbit will process the request within a reasonable period after verifying your identity.</p>
-
-      <h2>6. Security</h2>
-      <p>Habbit stores authentication sessions in native secure storage, uses HTTPS encryption for information transmitted to the server, and applies Supabase database row-level security policies so that access is limited to signed-in users and relevant challenge participants as needed. However, risks cannot be completely eliminated due to network issues, operating system issues, third-party service disruptions, or the security condition of the user's device.</p>
-
-      <h2>7. Children's Privacy</h2>
-      <p>Habbit is not a service primarily directed to children. Users who require consent from a legal guardian, such as users under the age of 14 in some jurisdictions, should use the service only with guardian consent and supervision.</p>
-
-      <h2>8. International Transfers</h2>
-      <p>Depending on the infrastructure locations of third-party services such as Google, Apple, Kakao, and Supabase, information may be processed on servers inside or outside Korea. Habbit uses these third-party services only as necessary to provide the service.</p>
-
-      <h2>9. Changes</h2>
-      <p>This Privacy Policy may be updated when features, laws, store policies, or third-party service configurations change. Important changes will be announced through the app, store page, or public policy page.</p>
+      <h2>9. Security and Children</h2>
+      <p>Sessions are stored in secure storage and access is limited through Supabase row-level security and authenticated server functions. Habbit is not primarily directed to children, but currently has no separate technical flow to restrict users under 14 or verify guardian consent.</p>
 
       <h2>10. Contact</h2>
-      <p>For privacy, account, or data deletion requests, contact <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a>.</p>
-      <footer>Habbit Privacy Policy</footer>
+      <ul>
+        <li>Privacy Officer: Gunho Park</li>
+        <li>Title: Privacy Officer</li>
+        <li>Email: <a href="mailto:yellowboxer1@naver.com">yellowboxer1@naver.com</a></li>
+        <li>Phone: <a href="tel:+821054756150">+82-10-5475-6150</a></li>
+      </ul>
+      <p>Material changes will be announced through the app, store page, or this page.</p>
+      <footer>Published and effective August 8, 2026 · Habbit Privacy Policy</footer>
     </section>
   </main>
   <script src="../assets/policy-language.js"></script>
