@@ -1,6 +1,6 @@
 (function () {
   var storageKey = 'habbitPolicyLanguage';
-  var supportedLanguages = ['ko', 'en'];
+  var supportedLanguages = ['ko', 'en', 'ja'];
   var select = document.querySelector('[data-language-select]');
 
   function isSupported(language) {
@@ -8,11 +8,15 @@
   }
 
   function titleKey(language) {
-    return language === 'en' ? 'pageTitleEn' : 'pageTitleKo';
+    if (language === 'en') return 'pageTitleEn';
+    if (language === 'ja') return 'pageTitleJa';
+    return 'pageTitleKo';
   }
 
   function textKey(language) {
-    return language === 'en' ? 'i18nEn' : 'i18nKo';
+    if (language === 'en') return 'i18nEn';
+    if (language === 'ja') return 'i18nJa';
+    return 'i18nKo';
   }
 
   function getQueryLanguage() {
@@ -32,6 +36,7 @@
 
   function getBrowserLanguage() {
     var language = (navigator.language || '').toLowerCase();
+    if (language.indexOf('ja') === 0) return 'ja';
     return language.indexOf('ko') === 0 ? 'ko' : 'en';
   }
 
@@ -57,31 +62,26 @@
 
   function applyLanguage(language, updateUrl) {
     var nextLanguage = isSupported(language) ? language : 'ko';
+    var languageSection = document.querySelector('[data-lang-content="' + nextLanguage + '"]');
+    if (!languageSection) nextLanguage = 'ko';
     document.documentElement.lang = nextLanguage;
     document.querySelectorAll('[data-lang-content]').forEach(function (node) {
       node.classList.toggle('is-active', node.getAttribute('data-lang-content') === nextLanguage);
     });
     document.querySelectorAll('[data-i18n-ko][data-i18n-en]').forEach(function (node) {
-      node.textContent = node.dataset[textKey(nextLanguage)];
+      var value = node.dataset[textKey(nextLanguage)] || node.dataset.i18nEn || node.dataset.i18nKo;
+      if (value) node.textContent = value;
     });
     document.querySelectorAll('a[data-preserve-lang]').forEach(function (link) {
       var href = link.getAttribute('href');
-      if (!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0) {
-        return;
-      }
+      if (!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0) return;
       link.setAttribute('href', localPathWithLanguage(href, nextLanguage));
     });
     var pageTitle = document.body.dataset[titleKey(nextLanguage)];
-    if (pageTitle) {
-      document.title = pageTitle;
-    }
-    if (select) {
-      select.value = nextLanguage;
-    }
+    if (pageTitle) document.title = pageTitle;
+    if (select) select.value = nextLanguage;
     setStoredLanguage(nextLanguage);
-    if (updateUrl) {
-      updateUrlLanguage(nextLanguage);
-    }
+    if (updateUrl) updateUrlLanguage(nextLanguage);
   }
 
   var initialLanguage = getQueryLanguage() || getStoredLanguage() || getBrowserLanguage();
